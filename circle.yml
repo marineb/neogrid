@@ -1,11 +1,12 @@
 version: 2
 jobs:
   build:
-    docker: # use the docker executor type; machine and macos executors are also supported
-      - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
+    docker:
+      - image: circleci/node:4.8.2
     steps:
       - add_ssh_keys:
           fingerprints:
             - "1a:14:f1:15:87:7c:2c:9b:fc:1a:43:47:0e:39:29:d5"
-      - checkout # check out the code in the project directory
+            - "1b:da:de:32:9e:a6:49:b6:eb:aa:23:20:d5:7f:0d:8a"
+      - checkout
       - run: scp -r * marineboudeau@marineboudeau.com:/home/marineboudeau/neogrid.org/
