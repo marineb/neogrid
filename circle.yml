@@ -7,4 +7,4 @@ jobs:
       - checkout # check out the code in the project directory
       - run:
         - echo "hello world" # run the `echo` command
-        - scp -r * marineboudeau@marineboudeau.com:/home/marineboudeau/neogrid.org/
+        # - scp -r * marineboudeau@marineboudeau.com:/home/marineboudeau/neogrid.org/
