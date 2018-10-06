@@ -1,0 +1,18 @@
+machine:
+  node:
+    version: 4.8.0
+
+test:
+  override:
+    - "true"
+
+deployment:
+  production:
+    branch: master
+    commands:
+      # - yarn run build
+      - scp -r * marineboudeau@marineboudeau.com:/home/marineboudeau/neogrid.org/
+
+  staging:
+    branch: beta
+    commands:
