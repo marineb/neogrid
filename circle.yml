@@ -6,7 +6,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "1a:14:f1:15:87:7c:2c:9b:fc:1a:43:47:0e:39:29:d5"
+            # - "1a:14:f1:15:87:7c:2c:9b:fc:1a:43:47:0e:39:29:d5"
             - "1b:da:de:32:9e:a6:49:b6:eb:aa:23:20:d5:7f:0d:8a"
       - checkout
       - run: scp -r * marineboudeau@marineboudeau.com:/home/marineboudeau/neogrid.org/
